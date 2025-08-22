@@ -1,0 +1,33 @@
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/connection-test")
+public class ConnectServlet extends HttpServlet {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.setCharacterEncoding("UTF-8");
+		final String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
+		final String DB_URL = "jdbc:mysql://localhost:3306/";
+		final String DATABASE_NAME = "testdb";
+		final String USER = "root";
+		final String PASSWORD = "1234";
+		
+		try {
+			Class.forName(DRIVER_NAME);
+			// DB 연결(커넥션 객체 생성)
+			Connection con = DriverManager.getConnection(DB_URL + DATABASE_NAME, USER, PASSWORD);
+			System.out.println(con);
+			
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}
