@@ -21,6 +21,11 @@
     </title>
 </head>
 <body style="margin: 50px;">
+<div style="margin-bottom: 30px;" >
+        <img src="<%= request.getContextPath() %>/resources/img/백용준로고.png" 
+             alt="로고" 
+             style="height:100px;"/>
+    </div>
 
 <%
     if (problem != null) {

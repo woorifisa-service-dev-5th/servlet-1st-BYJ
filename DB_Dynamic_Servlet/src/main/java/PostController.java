@@ -73,7 +73,8 @@ public class PostController extends HttpServlet {
 				out.println("</style></head><body>");
 
 				// Table
-				out.println("<h1>게시글 목록</h1>");
+				out.println("<h1><img src='" + req.getContextPath() + "/resources/img/백용준로고.png' alt='로고' style='height:100px; vertical-align:middle;'><br/>게시글 목록</h1>");
+			
 				out.println("<table class='post-table'>");
 				out.println("<thead><tr>" + "<th>ID</th><th>제목</th><th>문제ID</th><th>언어</th>"
 						+ "<th>작성자</th><th>댓글</th><th>좋아요</th><th>작성일</th>" + "</tr></thead>");
