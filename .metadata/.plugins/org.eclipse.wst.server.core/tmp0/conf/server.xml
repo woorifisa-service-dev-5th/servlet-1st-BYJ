@@ -162,7 +162,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\woori_workspace\BYJ\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\woori_workspace\BYJ\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\DB_Dynamic_Servlet" path="/DB_Dynamic_Servlet" reloadable="true" source="org.eclipse.jst.jee.server:DB_Dynamic_Servlet"/></Host>
+      <Context docBase="C:\woori_workspace\8.servlet\servlet-1st-BYJ\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\woori_workspace\8.servlet\servlet-1st-BYJ\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\DB_Dynamic_Servlet" path="/DB_Dynamic_Servlet" reloadable="true" source="org.eclipse.jst.jee.server:DB_Dynamic_Servlet"/></Host>
     </Engine>
   </Service>
 </Server>

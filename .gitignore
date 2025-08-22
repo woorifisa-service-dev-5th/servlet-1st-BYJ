@@ -1,0 +1,19 @@
+# Eclipse 설정 파일
+.metadata/
+*.launch
+.settings/
+
+# 빌드 결과물
+bin/
+build/
+target/
+
+# OS별 파일
+.DS_Store
+Thumbs.db
+
+# Git 내부 캐시 제외
+*.class
+
+# Eclipse WebView Cookies 등 내부 캐시
+.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Network/Cookies
