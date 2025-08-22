@@ -27,7 +27,7 @@
 %>
 		<span style="padding:6px 12px; color:white; background-color: #4CAF50;"><%= problem.getNum() %>번</span>
 		<span>
-    		<a href="/DB_Dynamic_Servlet/posts" style="text-decoration:none; padding:6px 12px; color: black;">질문 게시판</a>
+    		<a href="<%= request.getContextPath() %>/posts?problemId=<%= problem.getId() %>" style="text-decoration:none; padding:6px 12px; color: black;">질문 게시판</a>
 		</span>
         <h1 style="margin-top: 40px;"><%= problem.getTitle() %></h1>
         <h3>문제</h3> 
